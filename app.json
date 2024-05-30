@@ -1,143 +1,111 @@
 {
-  "name":"FLASH-MD",
-  "description":"An easy and simple WhatsApp bot developed by France King",
-  "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-  "repository":"https://github.com/franceking1/Flash-Md",
-  "succes_url":"/",
-  "stack":"container",
-     "env":{
-    "PREFIX":
-    {
-      "description":"choose your prefix of bot",
-      "value":".",
-      "required":true
-    },
-    "AUTO_READ_MESSAGES":
-    {
-      "description":"Put yes if you want the bot to autoread people's messages or else put no", 
-      "value":"no", 
-      "required":false 
-    }, 
-    "AUTO_READ_STATUS":
-    {
-      "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"yes",
-      "required":false
-    }, "AUTO_DOWNLOAD_STATUS":
-    {
-      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"yes",
-      "required":false
-    }
-    ,
-     "PM_PERMIT" :
-     {
-      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"no",
-      "required":false
-    }
-    ,
-    "BOT_NAME" : {
-
-      "description":"put A name for your bot",
-      "value":"FLASH-MD",
-      "required":false
-
-    } ,
-     "BOT_MENU_LINKS" : {
-
-      "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-      "required":false
-
-     },
-    "PUBLIC_MODE":
-    {
-      "description":"type yes to put your bot on public mode or no to put it on private mod",
-      "value":"no",
-      "required":false
-    }
-        ,
+  "name": "كرزة🍒بوت",
+  "description": " تم تطرير البوت بواسطة ايس وكايدو♥️",
+  "logo": "https://telegra.ph/file/cd30805283a8886392168.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "كرزة", "ايس","كايدو","theme bot","multi device","baileys","kraza"],
+  "success_url": "/",
+  "stack": "container",
+"env": {
+  "OWNER_NAME": {
+  "description": "𝑺𝑨𝑳𝑨𝑯",
+      "value": "『𝑨$𝑪𝑬⊰🍒⊱𝑲𝑨𝑰𝑫𝑶』"
+  },
+    "AUTO_STATUS_SAVER": {
+      "description": "لا تغيره.",
+       "required" :false
+      },
+	"AUTO_STATUS_READER": {
+      "description": "لا تغيره .",
+       "required" :false
+      },
     "HEROKU_API_KEY": {
-    "description": "insert your heroku api-key (this is optionnal)",
+    "description": "",
      "required" :false
     },
-   "HEROKU_APP_NAME": {
-    "description": "insert your heroku APP NAME (this is optionnal)",
+ "HEROKU_APP_NAME": {
+    "description": "كرزة🍒بوت",
+    "required": "true"
+},
+   "THUMB_IMAGE": {
+    "description": "صوره البوت.",
+     "value": "https://telegra.ph/file/cd30805283a8886392168.jpg"
+    },
+    "ANTI_BAD_WORD": {
+    "description": "لا تغيره",
      "required" :false
-    }  
-          ,
-    "SESSION_ID":
-    {
-      "description":"put your session ID, AMKE SURE IT STARTS WITH FLASH-MD-WA-BOT;;;=>",   
-      "value":"",
-      "required": true
-
     },
-    "OWNER_NAME":
-    {
-
-    "desc": "Your Name",
-    "required": false,
-    "value": "France King"
-  },
-    "OWNER_NUMBER":
-  {
-
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "254751284190"
-  },
-    "WARN_COUNT":
-  {
-    "desc": "this is the limit of warn for warning commandes",
-    "required": false,
-    "value": "3"
-  },
-    "CHAT_BOT":
-    {
-      "desc": "Put yes to allow the bot to chat with people who text you or put no if you don't want the bot to chat with people",
-      "required": false, 
-       "value": "no" 
-    }, 
-  "STARTING_BOT_MESSAGE":
-  {
-    "description": "if you don't want startting-bot-message put no else put yes",
-    "required": true,
-    "value": "yes"
-  },
-  "PRESENCE":{
-    "description":"Put online to indicate that you are ever online even if you are not. Put typing to indicate that you are currently typing a message. Put recording to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",
-    "required": false
-  }  
-  },
-
-
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
+   "ANTILINK_VALUES": {
+    "description": "لا تغيره",
+     "value": "fchat.whatsapp.com,fb.com,instagram.com,wa.me,youtube.com",
+     "required" :false
     },
-
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+     "ANTILINK_ACTION": {
+    "description": "لا تغيره",
+     "value": "remove",
+     "required" :false
     },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-
-  "formation": {
-                "worker": {
-                        "quantity": 1,
-                        "size": "basic"
-                }
-        },
-
-  "addons":[
-    {
-      "plan":"heroku-postgresql"
-    }
-  ]
+  "LEVEL_UP_MESSAGE": {
+    "description": "ارتفاع المستوي تلقائي اذا تبي تشغله خليه true.",
+     "required" :true,
+     "value": "true"
+    },
+      "READ_MESSAGE": {
+    "description": "لا تغيره.",
+     "required" :true,
+     "value": "true"
+    },
+   "DISABLE_PM": {
+    "description": "لا تغيره",
+     "required" :false
+    },
+      "PREFIX": {
+  "description": "بادئه البوت.",
+      "value": "."
+  },
+  "OWNER_NUMBER": {
+    "description": "رقم المطور يمكن اضافه اكثر من مطور وافصلهم بـ \",\")",
+       "value": "201147144354"
+  },
+   "SESSION_ID": {
+    "description": "FLASH-MD-WA-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYUNIdWt3eHRmZTNLYUVlbld4M2ZHS1JRUmM0aTdhckQxcDJtMmRCTUhsaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWkovbHhiU0g0UWwxTVhzeFpYRGFUUENPY2JxcGNycFJzY2krNXZsSlAzRT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJXRjYzaGlTMXRpNjB1cmFGR0VkUFVVc0RVOU1lcEw2Q0pieTAvWURwU21RPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI2Sm5YY04yS3puNnVueVZwSU9tRTN6THBJcUovaThxT1JnYk13NjZxc25JPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im1KUUkwajQ1M2lydmNlRnhRazRidnJjaXF4WEVMU2RQY2lmRkRBOFJPbDA9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Imh5c0k2VEdSTGk2eEZ6b2VCcW9PZ1JEZG9VVFAydEltZzExRzVqekpjRFU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVU9mMC9kb0l5Q0Q1KytsbUpETmFEV1JrejFoRnVUZ0ZWdEptajRZanExWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiL0R2Y01jOHgvR1JkZTlhbm15c2o0NmVrQ1NYTjZVTk5ySVFRWGNzRGFqZz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImJ1a1Z0MWQ4ZzdoRGFJR1Z3RExpRnFrVFMyMklra2ZUaU8raGY2eVczZjF6bVdBVnJZMFROdjlqYnpwYnZDamtaNE9IdlVHY0NBaWRVMEJsNEo0RUFBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTY0LCJhZHZTZWNyZXRLZXkiOiJyQzEzODA2QmtycERrVjNDY2ltNnJFZk84MjNQcG5pdzh6SUpRMkxacmM4PSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjIwMTEyMzI3NDYxM0BzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiJEOUQwMjQ1RDc0NDMwNEY2QjFGNEExNDQ5RUY4RTY2MSJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzE3MTExNDg4fV0sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjoxLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJlX1JVLWliLVJDS2JqQl9ZTWh2QkVBIiwicGhvbmVJZCI6IjlmZWJkYWFhLTM5N2UtNDQ1OS1iYzFkLTJjZDNhZTg3OGZkYiIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwVjRxMlA4SENQL2s2WGJ6eHJONENkaHpSQXM9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieFdIRVFXNlJJZ2xmUlR1K24xckpKOCs4ZkpRPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IkNCUUE5M0NWIiwibWUiOnsiaWQiOiIyMDExMjMyNzQ2MTM6MjRAcy53aGF0c2FwcC5uZXQiLCJuYW1lIjoi2YPYsdiy2Kkg8J+NkiDimpMifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0ozZWg0SUdFS3lWNUxJR0dBc2dBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6ImtnWUVFRjR2dkpTOTVaQ0ozK2JHSHVucUxDWTIzc1FubHo5K2VhY0VTaVU9IiwiYWNjb3VudFNpZ25hdHVyZSI6IjFFK0lCSklOb1Aya0N5UWdTOTUwdTRFalNJWG05RDM1MmZydk5QcXluVk9Ud2tSZEFtMTB5NnVWbmNOS0pobEs2Y25MRi9WVkp0NlpvNmpFaStXK0RRPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJuM0NUcVhXd2MrR2pUUGNUUXJpeENBYUdjWkhFU1FBbXd3MzlBM2E4OVIxczFJMTdWV283UTB0TlVHMGNOcmpEcVBWdStCcEJZKzFURmVaSlhlMzFDdz09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjIwMTEyMzI3NDYxMzoyNEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJaSUdCQkJlTDd5VXZlV1FpZC9teGg3cDZpd21OdDdFSjVjL2ZubW5CRW9sIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzE3MTExNDg0LCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQUQ0YyJ9"
+  },
+    "OPENAI_API_KEY": {
+    "description": "لا تغيره ",
+       "value": "false",
+       "required" :false
+  },
+  "MONGODB_URI": {
+    "description": "رابط مونجو اذا ما تعرفه اتركه كما هو",
+    "value": "mongodb+srv://godzenitsu:safeer.123.@nezuko.7kvhs7q.mongodb.net/"
+  },
+    "THEME": {
+    "description": "اتركه كما هو",
+     "value": "🍒 كرزة 🍒"
+  },
+    "WORKTYPE": {
+  "description": "اذا تبي البوت عام. اكتب public واذا تبيه خاص اكتب private.",
+         "value": "public"
+  },
+      "AUTO_REACTION": {
+    "description": "تفاعل تلقائي علي كل الرسائل.",
+     "value": "false",
+     "required": false 
+  },
+  "PACK_INFO": {
+    "description": "حقوق الملصقات.",
+     "value": "ELSA;MD",
+     "required": false 
+  },
+  "heroku": {
+    "description": "اتركه كما هو",
+     "value": "true",
+     "required": false 
+  }
+},
+"formation": {
+		"worker": {
+			"quantity": 1,
+			"size": "basic"
+		}
+	}
 }
